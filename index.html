@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mi</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mí</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
 <body>
-    <div class="header">
-        <h1>Conoceme mas en</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Portafolio</a></li>
-            </ul>
-        </nav>
-    </div>
 
-    <div class="presentacion">
-        <h2>Presentacion</h2>
-        <p>Lorem ipsum dolor sit amet consectetur 
-           adipisicing elit. Et corrupti velit minus facere veniam incidunt harum fugiat cumque blanditiis sequi! Corporis, aliquid totam. Sapiente earum neque accusantium 
-            quod deserunt quisdddddd!</p>
-    
-        <div class="lenguajes">
-            <img src="/img/softwares-de-programacion.jpg" alt="">
-            <div class="texto-sobre-imagen">
-                <h3>Lenguajes que utilizo</h3>
-                <P>Los dos primeros lenguajes los utilice en mi primer y segundo cuatrimestre de facultad, pude aprender las bases lo que me llevo a poder aprender un poco por mi cuenta de javascript</P>
-                <ol>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Javascript</li>
-                </ol>
-            </div>
-        </div>
-    </div>
-    
+  <header class="header">
+    <h1>Conoceme más en</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Portafolio</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main class="presentacion">
+    <article class="contenedor-imagen-texto">
+      <img src="/img/java-editores.webp" alt="" class="imgp-presentacion" />
+      <div class="titulo-sobre-imagen">
+        <h2>Gonzalo Romero</h2>
+        <br>
+        <p class="subtitulo-presentacion" strong>Estudiante de programación experimentando en el desarrollo web.</p>
 
-    <div class="proyectos">
-        <h2>Conoce mis proyectos</h2>
-        <a href="proyectos.html">
-          <button>Ver proyectos</button>
-        </a>
       </div>
-      
-      <footer class="footer">
-        <div class="contact-me">
-            <ul>
-                <li>
-                    programaciongonzalitox38@gmail.com
-                </li>
-                <li>
-                    38040000
-                </li>
-                <li>
-                    pending
-                </li>
-            </ul>
+    </article>
 
-        </div>
-      </footer>
+    <p class="parrafo1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et corrupti velit minus facere veniam incidunt harum fugiat cumque blanditiis sequi! Corporis, aliquid totam. Sapiente earum neque accusantium quod deserunt quisdddddd!
+    </p>
+
+    <article class="lenguajes">
+      <img src="/img/softwares-de-programacion.jpg" alt="Lenguajes de programación" />
+      <div class="texto-sobre-imagen">
+        <h3>Lenguajes que utilizo</h3>
+        <p>
+          Los dos primeros lenguajes los utilicé en mi primer y segundo cuatrimestre de facultad, lo que me llevó a aprender un poco por mi cuenta de JavaScript.
+        </p>
+        <ol>
+          <li>C</li>
+          <li>C++</li>
+          <li>JavaScript</li>
+        </ol>
+      </div>
+    </article>
+  </main>
+
+  <section class="seccion-proyectos">
+    <h2>Conocé mis proyectos</h2>
+    <p>Explorá algunos de los trabajos que he realizado con dedicación y pasión.</p>
+    <a href="proyectos.html" class="boton-ver-proyectos">Ver proyectos</a>
+  </section>
+
+  <footer class="footer">
+    <div class="contact-me">
+      <h3>Contacto</h3>
+      <ul>
+        <li><i class="fas fa-envelope"></i> programaciongonzalitox38@gmail.com</li>
+        <li><i class="fas fa-phone-alt"></i> 38040000</li>
+        <li><i class="fas fa-map-marker-alt"></i> Argentina</li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 </html>
