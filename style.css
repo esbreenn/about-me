@@ -4,3 +4,58 @@
     box-sizing: border-box; 
     font-family: 'Segoe UI', sans-serif;
   }
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #f58e81, #f5a79d);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    gap: 1rem; 
+  
+  }
+
+  .presentacion {
+    color: #f58e81;
+    text-align: center;
+}
+
+.lenguajes {
+    position: relative;
+    display: inline-block;
+}
+
+.lenguajes img {
+    width: 100%;
+    display: block;
+}
+
+.texto-sobre-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente solo para el texto */
+    padding: 10px;
+}
+
+
+
+  .footer{
+  bottom: 0;
+     width: 100%;
+     background-color: #f58e81;
+     color: white;
+     padding: 1rem;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+  }
