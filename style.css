@@ -7,7 +7,6 @@
   
   /* Header */
   .header {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,39 +14,44 @@
     padding: 15px 40px;
     background: linear-gradient(90deg, #f58e81, #f5a79d);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    gap: 1rem;
+  }
+  
+  .header h1 {
+    color: white;
+  }
+  
+  .header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
   }
   
   /* Presentación */
   .presentacion {
     color: #f58e81;
     text-align: center;
+    padding: 2rem 1rem;
   }
   
-  .parrafo1,
-  .seccion-proyectos {
-    background: linear-gradient(135deg, #f58e81 0%, #fca085 100%);
-    color: white;
-    padding: 4rem 2rem;
-    text-align: center;
-    border-radius: 1.5rem;
-    margin: 2rem auto;
-    max-width: 800px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border:2rem #000000;
-
-  }
-  
-  /* Imagen con texto encima */
   .contenedor-imagen-texto,
   .lenguajes {
     position: relative;
+    max-width: 600px;
+    margin: 2rem auto;
   }
   
   .imgp-presentacion,
   .lenguajes img {
     width: 100%;
-    display: block;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
   }
   
   .titulo-sobre-imagen,
@@ -58,31 +62,35 @@
     width: 100%;
     height: 100%;
     color: white;
+    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
     text-align: center;
-    padding: 10px;
   }
   
-  .titulo-sobre-imagen {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  .texto-sobre-imagen {
-    background-color: rgba(0, 0, 0, 0.5);
-    flex-direction: column;
-  }
   .subtitulo-presentacion {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-    text-align: center;
     max-width: 80%;
   }
   
+  .parrafo1,
+  .seccion-proyectos {
+    background: linear-gradient(135deg, #f58e81, #fca085);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
   
   /* Botón Proyectos */
   .boton-ver-proyectos {
@@ -96,34 +104,25 @@
     border: 2px solid white;
   }
   
-  /* Textos sección proyectos */
-  .seccion-proyectos h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .seccion-proyectos p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+  .boton-ver-proyectos:hover {
+    background-color: #f58e81;
+    color: white;
   }
   
   /* Footer */
   .footer {
-    width: 100%;
     background-color: #f58e81;
     color: white;
     padding: 2rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .contact-me {
-    max-width: 600px;
     text-align: center;
   }
   
@@ -146,6 +145,70 @@
   
   .contact-me i {
     margin-right: 0.5rem;
+  }
+  
+
+  /*proyectos seccion */
+  /* Sección de Proyectos Individuales */
+.proyectos-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(135deg, #f58e81, #fca085);
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .imagen-proyecto {
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+    height: 100%;
+  }
+  
+  .detalle-proyecto {
+    flex: 1;
+    padding: 2rem;
     color: white;
+  }
+  
+  .detalle-proyecto h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .detalle-proyecto p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .boton-proyecto {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: white;
+    color: #f58e81;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+  }
+  
+  .boton-proyecto:hover {
+    background-color: #f58e81;
+    color: white;
+    border-color: white;
   }
   
