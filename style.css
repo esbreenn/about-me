@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
   }
+  h2, h3 {
+    letter-spacing: 1px;
+  }
   
   /* Header */
   .header {
@@ -121,6 +124,10 @@
     border-top-right-radius: 1rem;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
   }
+  .footer ul li {
+    font-style: italic;
+  }
+  
   
   .contact-me {
     text-align: center;
@@ -136,6 +143,8 @@
   
   .contact-me ul {
     list-style: none;
+    margin-top: 1rem;
+
   }
   
   .contact-me li {
@@ -210,5 +219,32 @@
     background-color: #f58e81;
     color: white;
     border-color: white;
+  }
+  
+  .tabla-proyecto {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: white;
+    color: #333;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabla-proyecto th,
+  .tabla-proyecto td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabla-proyecto th {
+    background-color: #f58e81;
+    color: white;
+  }
+  
+  .tabla-proyecto tr:last-child td {
+    border-bottom: none;
   }
   
