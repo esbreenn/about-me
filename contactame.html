@@ -7,48 +7,54 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-
     <div class="mis-datos">
         <h1>Contactame</h1>
         <p>Puedes contactarme de la siguiente manera</p>
         <div class="logos-contactos">
-        <img src="/img/whatsapp.png" alt="www.google.com">
-        <img src="/img/linkedin.png" alt="">
-        <img src="/img/gmail.png" alt="">
-        </div>
-      
-    </div>
-
-
-    <form>
+            <a href="https://wa.me/XXXXXXXXXXX" target="_blank">
+              <img src="/img/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.linkedin.com/in/tuusuario" target="_blank">
+              <img src="/img/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="mailto:programaciongonzalitox38@gmail.com" target="_blank">
+              <img src="/img/gmail.png" alt="Gmail">
+            </a>
+          </div>
+          
+      </div>
+    
+      <form>
         <fieldset>
-            <p>Los campos obligatorios se marcan con un <abbr title="required">*</abbr>.</p>
           <legend>Ingresa tus datos</legend>
+          <p>Los campos obligatorios se marcan con un <abbr title="required">*</abbr>.</p>
+    
           <p>
-            <label for="size_1">Telefono</label>
-            <input type="number">
+            <label for="telefono">Teléfono</label>
+            <input type="number" id="telefono" name="telefono">
           </p>
+    
           <p>
-
-            <label for="size_2">Correo electronico</label>
-            <input type="text">
+            <label for="correo">Correo electrónico</label>
+            <input type="text" id="correo" name="correo">
           </p>
+    
           <p>
-            <div>
-                <label for="username"
-                  >Nombre: <abbr title="required" aria-label="required">*</abbr></label
-                >
-                <input id="username" type="text" name="username" />
-              </div>
-              
+            <label for="username">Nombre <abbr title="required">*</abbr></label>
+            <input id="username" type="text" name="username" required>
           </p>
+    
           <p>
-            <label for="size_3">Que es lo que necesitas crear?</label>
-            <input type="text">
+            <label for="proyecto">¿Qué necesitas crear?</label>
+            <input type="text" id="proyecto" name="proyecto">
+          </p>
+    
+          <p>
+            <button type="submit">Enviar</button>
           </p>
         </fieldset>
       </form>
-
+    
       <footer class="footer">
         <div class="contact-me">
           <h3>Contacto</h3>
@@ -59,6 +65,5 @@
           </ul>
         </div>
       </footer>
-      
 </body>
 </html>

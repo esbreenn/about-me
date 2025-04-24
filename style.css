@@ -247,4 +247,30 @@
   .tabla-proyecto tr:last-child td {
     border-bottom: none;
   }
+  .logos-contactos {
+    display: flex;
+    justify-content: space-around; 
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .logos-contactos a {
+    flex: 1; 
+    max-width: 100px; 
+    text-align: center;
+  }
+  
+  .logos-contactos img {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .logos-contactos img:hover {
+    transform: scale(1.05);
+  }
   
