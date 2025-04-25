@@ -1,386 +1,425 @@
+/* Reset general de márgenes, paddings y box model */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  h2, h3 {
-    letter-spacing: 1px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 
+/* Estilo para subtítulos */
+h2, h3 {
+  letter-spacing: 1px;
+}
 
-  
-  /* Header */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 15px 40px;
-    background: linear-gradient(90deg, #f58e81, #f5a79d);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .header h1 {
-    color: white;
-  }
-  
-  .header ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .header a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* Presentación */
-  .presentacion {
-    color: #f58e81;
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-  
-  .contenedor-imagen-texto,
-  .lenguajes {
-    position: relative;
-    max-width: 600px;
-    margin: 2rem auto;
-  }
-  
-  .imgp-presentacion,
-  .lenguajes img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 1rem;
-  }
-  
-  .titulo-sobre-imagen,
-  .texto-sobre-imagen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 1rem;
-    text-align: center;
-  }
-  
-  .subtitulo-presentacion {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-    max-width: 80%;
-  }
-  
-  .parrafo1,
-  .seccion-proyectos {
-    background: linear-gradient(135deg, #f58e81, #fca085);
-    color: white;
-    padding: 3rem 2rem;
-    text-align: center;
-    border-radius: 1rem;
-    margin: 2rem auto;
-    max-width: 700px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Botón Proyectos */
-  .boton-ver-proyectos {
-    background-color: white;
-    color: #f58e81;
-    text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    border: 2px solid white;
-  }
-  
-  .boton-ver-proyectos:hover {
-    background-color: #f58e81;
-    color: white;
-  }
-  
-  /* Footer */
-  .footer {
-    background-color: #f58e81;
-    color: white;
-    padding: 2rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-  }
-  .footer ul li {
-    font-style: italic;
-  }
-  
-  
-  .contact-me {
-    text-align: center;
-  }
-  
-  .contact-me h3 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    border-bottom: 2px solid white;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-  }
-  
-  .contact-me ul {
-    list-style: none;
-    margin-top: 1rem;
+/* Header */
+.header {
+  display: flex; /* Distribución horizontal */
+  justify-content: space-between; /* Espaciado entre logo y menú */
+  align-items: center; /* Alineación vertical */
+  flex-wrap: wrap; /* Permite salto de línea */
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #f58e81, #f5a79d); /* Fondo degradado */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-  }
-  
-  .contact-me li {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-  }
-  
-  .contact-me i {
-    margin-right: 0.5rem;
-  }
-  
+.header h1 {
+  color: white;
+}
 
-  /*proyectos seccion */
-  /* Sección de Proyectos Individuales */
+.header ul {
+  list-style: none; /* Quita viñetas */
+  display: flex;
+  gap: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Presentación */
+.presentacion {
+  color: #f58e81;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.contenedor-imagen-texto,
+.lenguajes {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.imgp-presentacion,
+.lenguajes img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.titulo-sobre-imagen,
+.texto-sobre-imagen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4); /* Capa oscura sobre imagen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.subtitulo-presentacion {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6); /* Sombra para mejor lectura */
+  max-width: 80%;
+}
+
+/* Sección destacada */
+.parrafo1,
+.seccion-proyectos {
+  background: linear-gradient(135deg, #f58e81, #fca085);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón proyectos */
+.boton-ver-proyectos {
+  background-color: white;
+  color: #f58e81;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+}
+
+.boton-ver-proyectos:hover {
+  background-color: #f58e81;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background-color: #f58e81;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer ul li {
+  font-style: italic;
+}
+
+.contact-me {
+  text-align: center;
+}
+
+.contact-me h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.contact-me ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.contact-me li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.contact-me i {
+  margin-right: 0.5rem;
+}
+
+/* Sección proyectos individuales */
 .proyectos-container {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .proyecto {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background: linear-gradient(135deg, #f58e81, #fca085);
-    border-radius: 1rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  .imagen-proyecto {
-    width: 100%;
-    max-width: 350px;
-    object-fit: cover;
-    border-radius: 1rem 0 0 1rem;
-    height: 100%;
-  }
-  
-  .detalle-proyecto {
-    flex: 1;
-    padding: 2rem;
-    color: white;
-  }
-  
-  .detalle-proyecto h2 {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-  }
-  
-  .detalle-proyecto p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  .boton-proyecto {
-    display: inline-block;
-    margin-top: 1.5rem;
-    background-color: white;
-    color: #f58e81;
-    text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    border: 2px solid white;
-  }
-  
-  .boton-proyecto:hover {
-    background-color: #f58e81;
-    color: white;
-    border-color: white;
-  }
-  
-  .tabla-proyecto {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1.5rem;
-    background-color: white;
-    color: #333;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .tabla-proyecto th,
-  .tabla-proyecto td {
-    padding: 0.75rem 1rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .tabla-proyecto th {
-    background-color: #f58e81;
-    color: white;
-  }
-  
-  .tabla-proyecto tr:last-child td {
-    border-bottom: none;
-  }
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
-  body {
-    background: linear-gradient(135deg, #ffe0db, #fad4c0);
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-  }
-  .mis-datos {
-    text-align: center;
-    padding: 3rem 1rem;
-    background: linear-gradient(135deg, #ffe3df, #fcd5ce);
-    border-radius: 1rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin: 2rem auto;
-  }
-  
-  .mis-datos h1 {
-    color: #f58e81;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .subtexto {
-    color: #333;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .logos-contactos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-    gap: 1rem;
-    width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo-link {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .logo-link:hover {
-    transform: scale(1.1);
-  }
-  
-  .logo-link img {
-    max-width: 100px;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-  
-  
-  .formulario-contacto {
-    max-width: 600px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  }
-  
-  .formulario-contacto fieldset {
-    border: none;
-  }
-  
-  .formulario-contacto legend h2 {
-    font-size: 1.8rem;
-    color: #f58e81;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  
-  .info-obligatorio {
-    font-size: 0.9rem;
-    color: #888;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .campo-form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.5rem;
-  }
-  
-  .campo-form label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #f58e81;
-  }
-  
-  .campo-form input,
-  .campo-form textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  .campo-form input:focus,
-  .campo-form textarea:focus {
-    border-color: #f58e81;
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(245, 142, 129, 0.2);
-  }
-  
-  .boton-form {
-    text-align: center;
-  }
-  
-  .boton-form button {
-    background-color: #f58e81;
-    color: white;
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .boton-form button:hover {
-    background-color: #f27b6a;
-  }
-  
+.proyecto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(135deg, #f58e81, #fca085);
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.imagen-proyecto {
+  width: 100%;
+  max-width: 350px;
+  object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
+  height: 100%;
+}
+
+.detalle-proyecto {
+  flex: 1;
+  padding: 2rem;
+  color: white;
+}
+
+.detalle-proyecto h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.detalle-proyecto p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.boton-proyecto {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: white;
+  color: #f58e81;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+}
+
+.boton-proyecto:hover {
+  background-color: #f58e81;
+  color: white;
+  border-color: white;
+}
+
+/* Tabla dentro de los proyectos */
+.tabla-proyecto {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background-color: white;
+  color: #333;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-proyecto th,
+.tabla-proyecto td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabla-proyecto th {
+  background-color: #f58e81;
+  color: white;
+}
+
+.tabla-proyecto tr:last-child td {
+  border-bottom: none;
+}
+
+/* Fondo general */
+body {
+  background: linear-gradient(135deg, #ffe0db, #fad4c0);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sección "mis datos" */
+.mis-datos {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #ffe3df, #fcd5ce);
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.mis-datos h1 {
+  color: #f58e81;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtexto {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Logos de contacto */
+.logos-contactos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo-link {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.1);
+}
+
+.logo-link img {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Formulario contacto */
+.formulario-contacto {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.formulario-contacto fieldset {
+  border: none;
+}
+
+.formulario-contacto legend h2 {
+  font-size: 1.8rem;
+  color: #f58e81;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.info-obligatorio {
+  font-size: 0.9rem;
+  color: #888;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.campo-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.campo-form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #f58e81;
+}
+
+.campo-form input,
+.campo-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.campo-form input:focus,
+.campo-form textarea:focus {
+  border-color: #f58e81;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(245, 142, 129, 0.2);
+}
+
+/* Botón formulario */
+.boton-form {
+  text-align: center;
+}
+
+.boton-form button {
+  background-color: #f58e81;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-form button:hover {
+  background-color: #f27b6a;
+}
+
+/* Sección volver al inicio */
+.volver-inicio {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: #fff3f1;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.volver-inicio {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.btn-volver-inicio {
+  background-color: #f58e81;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-volver-inicio:hover {
+  background-color: #fca085;
+}
