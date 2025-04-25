@@ -310,4 +310,77 @@
   }
   
   
+  .formulario-contacto {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .formulario-contacto fieldset {
+    border: none;
+  }
+  
+  .formulario-contacto legend h2 {
+    font-size: 1.8rem;
+    color: #f58e81;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .info-obligatorio {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .campo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .campo-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #f58e81;
+  }
+  
+  .campo-form input,
+  .campo-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .campo-form input:focus,
+  .campo-form textarea:focus {
+    border-color: #f58e81;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(245, 142, 129, 0.2);
+  }
+  
+  .boton-form {
+    text-align: center;
+  }
+  
+  .boton-form button {
+    background-color: #f58e81;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-form button:hover {
+    background-color: #f27b6a;
+  }
   
