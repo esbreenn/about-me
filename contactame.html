@@ -25,36 +25,37 @@
           
       </div>
     
-      <form>
+      <form class="formulario-contacto">
         <fieldset>
-          <legend>Ingresa tus datos</legend>
-          <p>Los campos obligatorios se marcan con un <abbr title="required">*</abbr>.</p>
-    
-          <p>
+          <legend><h2>Contacto</h2></legend>
+          <p class="info-obligatorio">Los campos con <abbr title="obligatorio">*</abbr> son obligatorios.</p>
+      
+          <div class="campo-form">
+            <label for="username">Nombre <abbr title="obligatorio">*</abbr></label>
+            <input id="username" type="text" name="username" required placeholder="Tu nombre completo">
+          </div>
+      
+          <div class="campo-form">
             <label for="telefono">Teléfono</label>
-            <input type="number" id="telefono" name="telefono">
-          </p>
-    
-          <p>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3804 123456">
+          </div>
+      
+          <div class="campo-form">
             <label for="correo">Correo electrónico</label>
-            <input type="text" id="correo" name="correo">
-          </p>
-    
-          <p>
-            <label for="username">Nombre <abbr title="required">*</abbr></label>
-            <input id="username" type="text" name="username" required>
-          </p>
-    
-          <p>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+          </div>
+      
+          <div class="campo-form">
             <label for="proyecto">¿Qué necesitas crear?</label>
-            <input type="text" id="proyecto" name="proyecto">
-          </p>
-    
-          <p>
-            <button type="submit">Enviar</button>
-          </p>
+            <textarea id="proyecto" name="proyecto" rows="4" placeholder="Ej: una página web, portafolio, etc."></textarea>
+          </div>
+      
+          <div class="boton-form">
+            <button type="submit">Enviar mensaje</button>
+          </div>
         </fieldset>
       </form>
+      
     
       <footer class="footer">
         <div class="contact-me">
